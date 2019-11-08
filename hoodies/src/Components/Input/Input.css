@@ -1,0 +1,39 @@
+.Input {
+    width: 60%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Input .inputText {
+    height: 70px;
+    width: 90%;
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 57px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    letter-spacing: 8px;
+}
+
+.Input .inputText.code {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.Input .inputText::placeholder{
+    color: rgb(182, 182, 182);
+}
+
+.Input .inputText.error {
+    color: red;
+}
+
+/* .Input .inputText input:focus {
+    background-color: white;
+  } */

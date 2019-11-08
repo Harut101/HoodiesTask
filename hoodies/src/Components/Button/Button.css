@@ -1,0 +1,30 @@
+.Button {
+    width: 55.5px;
+    height: 24px;
+}
+
+.Button .button-icon {
+    height: 100%;
+    width: 100%;
+    background-size: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.Button:hover, .Button:hover svg path {
+   cursor: pointer;
+   stroke: #3370E7;
+}
+
+.Button svg path.disabled {
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+.Button:hover svg path.disabled {
+    stroke: #262626;
+}
+
+.Button svg path {
+    opacity: 1;
+}

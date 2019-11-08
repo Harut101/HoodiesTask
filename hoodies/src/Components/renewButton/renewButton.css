@@ -1,0 +1,22 @@
+.RenewButton {
+    width: 55.5px;
+    height: 24px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.RenewButton:hover, .RenewButton:hover svg path {
+   cursor: pointer;
+   fill: #3370E7;
+}
+
+ .RenewButton:hover svg {
+    transform: rotate(90deg);
+   
+ }
+
+
+.RenewButton svg  {
+    transition: transform .6s;
+}

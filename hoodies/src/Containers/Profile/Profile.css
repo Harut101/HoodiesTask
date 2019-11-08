@@ -1,0 +1,112 @@
+.Profile {
+    width: 700px;
+    height: 95vh;;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.Profile .ActionButton.logOut {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 0;
+    top: 50px;
+
+    background-color: #E5E5E5;
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 100px;
+    padding: 0 40px;
+    cursor: pointer;
+    border: 1px solid #262626;
+    background-size: 10px;
+    background-position: 20px 10px;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='15' viewBox='0 0 12 15' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.6253 8.75026C10.2797 8.75026 10.0003 9.03026 10.0003 9.37527V12.5004H7.50022V2.50006C7.50022 2.22443 7.31895 1.98067 7.05457 1.90131L4.88387 1.25005H10.0003V4.37515C10.0003 4.72016 10.2797 5.00015 10.6253 5.00015C10.9709 5.00015 11.2503 4.72016 11.2503 4.37515V0.625038C11.2503 0.279998 10.9709 0 10.6253 0H0.625008C0.602508 0 0.582497 0.00937527 0.560641 0.0118656C0.531256 0.0150004 0.50439 0.019981 0.476264 0.026866C0.410637 0.0437415 0.35125 0.069377 0.295643 0.104358C0.281903 0.113119 0.265027 0.113734 0.251902 0.123724C0.246863 0.127504 0.244988 0.134389 0.239978 0.138139C0.17186 0.191871 0.114994 0.257498 0.0737424 0.335635C0.0649824 0.35251 0.0631073 0.370645 0.0562516 0.388136C0.0362413 0.435628 0.0143852 0.481889 0.00688497 0.53439C0.00375011 0.553141 0.00937527 0.570632 0.00876002 0.588767C0.00814477 0.601277 0 0.612527 0 0.625008V13.1254C0 13.4235 0.210621 13.6798 0.502515 13.7379L6.75269 14.988C6.79332 14.9967 6.83457 15.0005 6.87518 15.0005C7.0183 15.0005 7.15893 14.9511 7.27143 14.8586C7.41581 14.7398 7.50019 14.5629 7.50019 14.3754V13.7504H10.6253C10.9709 13.7504 11.2503 13.4704 11.2503 13.1254V9.37527C11.2503 9.03026 10.9709 8.75026 10.6253 8.75026Z' fill='%23262626'/%3E%3C/svg%3E%0A");
+}
+
+.Profile .ActionButton.logOut:hover {
+    background-color: white;
+
+}
+
+
+@media only screen and (max-width: 720px) {
+    .Profile {
+        width: unset;
+    }
+
+    .Profile .List .Item{
+        width: unset;
+    }
+
+
+    .Profile .ActionButton.logOut {
+        padding: unset;
+        background-position: center;
+        right: 50px;
+    }
+
+    .Profile .ActionButton.logOut  .buttonText{
+       display: none;
+    }
+
+    .Modal-Layer .modal .footer {
+        margin-left: 15px;
+    }
+    .Profile .UserProfile {
+        
+        left: unset;
+    }
+    .Profile .List .Item .ActionButton{
+        top: 3px;
+        right: 10px;
+        display: none;
+
+    }
+
+    .Profile .List .Item .ActionButton.swipe{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .Modal-Layer .modal .footer .ActionButton{
+        margin-left: 20px;
+        width: 277px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .Modal-Layer .modal {
+        height: 100%;
+        justify-content: unset;
+    }
+    .Modal-Layer .modal .close{
+        right: 25px;
+        padding-top: 20px;
+    }
+
+    .Modal-Layer .modal .header {
+        margin-top: 40px;
+    }
+
+    .Modal-Layer .modal .body input {
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    /* .Profile .List .Item .ActionButton{
+        display: none;
+    } */
+}
+
+@media only screen and (max-width: 375px) {
+    .Modal-Layer .modal .footer .ActionButton{
+        margin-left: unset;
+    }
+}
